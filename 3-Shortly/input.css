@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#cta {
+  background-image: url('../images/bg-boost-desktop.svg');
+  background-repeat: no-repeat;
+  background-size: center;
+}
+
+.ficon:hover {
+  filter: invert(79%) sepia(61%) saturate(464%) hue-rotate(130deg) brightness(89%) contrast(85%);
+}
+
+.hamburger {
+  @apply relative w-6 h-6 transition-all duration-[250ms] cursor-pointer;
+}
+
+.hamburger-top, .hamburger-middle, .hamburger-bottom {
+  @apply absolute w-6 h-0.5 top-0 left-0 bg-black rotate-0 transition-all duration-500;
+}
+
+.hamburger-middle {
+  @apply translate-y-[0.4375rem];
+}
+
+.hamburger-bottom {
+  @apply translate-y-3.5;
+}
+
+.open {
+  @apply rotate-90; 
+}
+
+.open .hamburger-top {
+  @apply rotate-45 translate-y-1.5 -translate-x-1.5;
+}
+
+.open .hamburger-middle {
+  @apply hidden;
+}
+
+.open .hamburger-bottom {
+  @apply -rotate-45 translate-y-1.5 -translate-x-1.5;
+}
