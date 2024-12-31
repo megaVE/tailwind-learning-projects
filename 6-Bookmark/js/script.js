@@ -2,6 +2,11 @@ console.log("JavaScript working")
 
 const tabs = document.querySelectorAll('.tab')
 const panels = document.querySelectorAll('.panel')
+const button = document.querySelector('#menu-btn')
+const menu = document.querySelector('#menu')
+const logo = document.querySelector('#logo')
+
+button.addEventListener('click', navToggle)
 
 function onTabClick(e) {
   tabs.forEach(tab => {
@@ -26,3 +31,15 @@ function onTabClick(e) {
 }
 
 tabs.forEach(tab => tab.addEventListener('click', onTabClick))
+
+function navToggle() {
+  button.classList.toggle('open')
+  menu.classList.toggle('flex')
+  menu.classList.toggle('hidden')
+
+  if (menu.classList.contains('flex')) {
+    logo.setAttribute('src', './images/logo-bookmark-footer.svg')
+  } else {
+    logo.setAttribute('src', './images/logo-bookmark.svg')
+  }
+}
