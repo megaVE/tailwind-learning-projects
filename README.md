@@ -1,6 +1,6 @@
 # Tailwind CSS Learning Project (Projetos de Aprendizado de Tailwind CSS)
 
-Projets developed during the course "Tailwind CSS From Scratch | Learn By Building Projects" from Udemy | Projetos desenvolvidos durante o Curso "Tailwind CSS From Scratch | Learn By Building Projects" da Udemy 
+Projects developed during the course "Tailwind CSS From Scratch | Learn By Building Projects" from Udemy | Projetos desenvolvidos durante o Curso "Tailwind CSS From Scratch | Learn By Building Projects" da Udemy 
 
 ## 1 - Clipboard
 Landing page for a website dedicated to make a history from the content copied individually by each user.
